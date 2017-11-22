@@ -29,10 +29,10 @@ public class yandex {
   }
 
   @Test
-  public void sss2() throws InterruptedException {
+  public void yandexMarket() throws InterruptedException {
 //    wd.manage().window().fullscreen();
     wd.get("https://yandex.ru/"); //2. Зайти на yandex.ru
-    wd.findElement(By.linkText("Маркет")).click(); //3.	Перейти на Яндекс Маркет
+    wd.findElement(By.xpath("html/body/div[1]/div[3]/div[2]/div[2]/div/div[2]/div/div[1]/div/a[5]")).click(); //3.	Перейти на Яндекс Маркет
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     wd.findElement(By.xpath("html/body/div[1]/div[2]/noindex/ul/li[2]/a")).click(); //4.	Выбрать раздел  Компьютеры
     wd.findElement(By.xpath("html/body/div[1]/div[4]/div[1]/div/div[1]/div/a[1]")).click(); //5.	 Выбрать раздел Планшеты
@@ -65,13 +65,13 @@ public class yandex {
     jse.executeScript("window.scrollBy(0,100000)", "");
     wd.findElement(By.xpath("html/body/div[1]/div[4]/div/div[1]/div[4]/a[2]")).click(); //9.	Применить условия поиска
     String fr = wd.findElement(By.xpath("html/body/div[1]/div[4]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div[4]/div[1]/div/a")).getText();//10.	Запомнить второй элемент в результатах поиска
-System.out.println(fr);
+    System.out.println(fr);
     wd.get("https://market.yandex.ru/"); //11.	В поисковую строку ввести запомненное значение.
     wd.findElement(By.id("header-search")).clear();
-    wd.findElement(By.id("header-search")).sendKeys("\""+fr+"\"");
-    wd.findElement(By.xpath("//span[@class='search2__button']//button[.='Найти']")).click();//12.	Найти и проверить, что наименование товара соответствует запомненному значению.
+    wd.findElement(By.id("header-search")).sendKeys("\"" + fr + "\"");
+    wd.findElement(By.xpath("html/body/div[1]/div[1]/noindex/div/div/div[2]/div/div[1]/form/span[2]/button")).click();//12.	Найти и проверить, что наименование товара соответствует запомненному значению.
     String fr2 = wd.findElement(By.xpath("html/body/div[1]/div[4]/div[2]/div[1]/div[2]/div/div[1]/div/div[4]/div[1]/div/a")).getText();
-    Assert.assertEquals(fr,fr2);
+    Assert.assertEquals(fr, fr2);
   }
 
 

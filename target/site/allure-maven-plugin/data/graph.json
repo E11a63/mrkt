@@ -1,0 +1,11 @@
+[ {
+  "uid" : "629952e2dcbc02c7",
+  "name" : "yandexMarket",
+  "time" : {
+    "start" : 1511375559369,
+    "stop" : 1511375621939,
+    "duration" : 62570
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
