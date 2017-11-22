@@ -26,7 +26,7 @@ public class ieYandex {
 
   @BeforeMethod
   public void setUp() throws Exception {
-    //1.1 Открыть браузер b развернуть на весь экран
+    //1. Открыть браузер b развернуть на весь экран
     wd = new InternetExplorerDriver();
     wd.manage().window().maximize();
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -39,10 +39,11 @@ public class ieYandex {
     wd.get("https://yandex.ru/");
     //3.	Перейти на Яндекс Маркет
     wd.findElement(By.xpath(".//a[5]")).click();
-    WebDriverWait wait = new WebDriverWait(wd, 10);
+    WebDriverWait wait = new WebDriverWait(wd, 30);
     WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//div[1]//li[2]/a")));
     //4.	Выбрать раздел  Компьютеры html/body/div[1]/div[2]/noindex/ul/li[2]/a
     wd.findElement(By.xpath(".//div[1]//li[2]/a")).click();
+    WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//div[4]/div[1]/div/div[1]/div/a[1]")));
     //5.	 Выбрать раздел Планшеты
     wd.findElement(By.xpath(".//div[4]/div[1]/div/div[1]/div/a[1]")).click();
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -70,11 +71,11 @@ public class ieYandex {
     }
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     jse.executeScript("window.scrollBy(0,100000)", "");
-    WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//div[1]//div[4]/a[2]")));
+    WebElement element3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//div[1]//div[4]/a[2]")));
     //9.	Применить условия поиска
     wd.findElement(By.xpath(".//div[1]//div[4]/a[2]")).click();
     //10.	Запомнить второй элемент в результатах поиска
-    String Acer1 = wd.findElement(By.xpath(".//div[1]//div[2]/div[4]/div[1]/div/a")).getText();
+    String Acer1 = wd.findElement(By.xpath(".//div[2]/div[4]/div[1]/div/a")).getText();
     System.out.println(Acer1);
     //11.	В поисковую строку ввести запомненное значение.
     wd.get("https://market.yandex.ru/");
