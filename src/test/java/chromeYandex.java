@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class yandex {
+public class chromeYandex {
   ChromeDriver wd;
 
   public static boolean isAlertPresent(ChromeDriver wd) {
