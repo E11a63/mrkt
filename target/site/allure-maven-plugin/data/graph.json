@@ -1,11 +1,21 @@
 [ {
-  "uid" : "629952e2dcbc02c7",
-  "name" : "yandexMarket",
+  "uid" : "f37b67b53ce03e77",
+  "name" : "chromeYandexMarket",
   "time" : {
-    "start" : 1511375559369,
-    "stop" : 1511375621939,
-    "duration" : 62570
+    "start" : 1511389277221,
+    "stop" : 1511389328452,
+    "duration" : 51231
   },
-  "status" : "passed",
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d08e104c6ad7a595",
+  "name" : "ieYandexMarket",
+  "time" : {
+    "start" : 1511389331978,
+    "stop" : 1511389405788,
+    "duration" : 73810
+  },
+  "status" : "broken",
   "severity" : "normal"
 } ]

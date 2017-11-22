@@ -1,1 +1,0 @@
-{"uuid":"928f3b21-5bf0-4a51-8246-ca851599b4d4","name":"yandexIE_2.setUp","description":"","start":1511386178163,"stop":1511386194187,"children":["1a334f1a-5da3-4db2-9461-3900542c6a9d"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1511386178175,"stop":1511386194187}]}

@@ -1,69 +1,80 @@
 {
   "statistic" : {
-    "failed" : 0,
-    "broken" : 0,
+    "failed" : 1,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 1,
+    "passed" : 0,
     "unknown" : 0,
-    "total" : 1
+    "total" : 2
   },
   "time" : {
-    "minDuration" : 62570,
-    "maxDuration" : 62570,
-    "sumDuration" : 62570,
-    "start" : 1511375559369,
-    "stop" : 1511375621939,
-    "duration" : 62570
+    "minDuration" : 51231,
+    "maxDuration" : 73810,
+    "sumDuration" : 125041,
+    "start" : 1511389277221,
+    "stop" : 1511389405788,
+    "duration" : 128567
   },
   "children" : [ {
-    "uid" : "3ec40a973d315bee",
+    "uid" : "13a264f74842e641",
     "name" : "DJB",
     "time" : {
-      "minDuration" : 62570,
-      "maxDuration" : 62570,
-      "sumDuration" : 62570,
-      "start" : 1511375559369,
-      "stop" : 1511375621939,
-      "duration" : 62570
+      "minDuration" : 51231,
+      "maxDuration" : 73810,
+      "sumDuration" : 125041,
+      "start" : 1511389277221,
+      "stop" : 1511389405788,
+      "duration" : 128567
     },
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 1,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "type" : "TestGroupNode",
     "children" : [ {
-      "uid" : "fa4ed9a1a13316bc",
-      "name" : "5852@DJB.main(1)",
+      "uid" : "37098fc760891dc5",
+      "name" : "7760@DJB.main(1)",
       "time" : {
-        "minDuration" : 62570,
-        "maxDuration" : 62570,
-        "sumDuration" : 62570,
-        "start" : 1511375559369,
-        "stop" : 1511375621939,
-        "duration" : 62570
+        "minDuration" : 51231,
+        "maxDuration" : 73810,
+        "sumDuration" : 125041,
+        "start" : 1511389277221,
+        "stop" : 1511389405788,
+        "duration" : 128567
       },
       "statistic" : {
-        "failed" : 0,
-        "broken" : 0,
+        "failed" : 1,
+        "broken" : 1,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 0,
         "unknown" : 0,
-        "total" : 1
+        "total" : 2
       },
       "type" : "TestGroupNode",
       "children" : [ {
-        "uid" : "629952e2dcbc02c7",
-        "name" : "yandexMarket",
+        "uid" : "f37b67b53ce03e77",
+        "name" : "chromeYandexMarket",
         "time" : {
-          "start" : 1511375559369,
-          "stop" : 1511375621939,
-          "duration" : 62570
+          "start" : 1511389277221,
+          "stop" : 1511389328452,
+          "duration" : 51231
         },
-        "status" : "passed",
+        "status" : "failed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "d08e104c6ad7a595",
+        "name" : "ieYandexMarket",
+        "time" : {
+          "start" : 1511389331978,
+          "stop" : 1511389405788,
+          "duration" : 73810
+        },
+        "status" : "broken",
         "flaky" : false,
         "type" : "TestCaseNode"
       } ]

@@ -1,1 +1,0 @@
-{"uuid":"f066ab86-ffac-4176-a086-ff9d3b0a825c","name":"yandex.setUp","description":"","start":1511384446967,"stop":1511384456509,"children":["6404bb49-58d0-40a4-bedd-e0a7b11e2b40"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1511384446983,"stop":1511384456506}]}

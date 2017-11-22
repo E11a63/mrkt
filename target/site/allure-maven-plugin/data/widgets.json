@@ -2,30 +2,30 @@
   "summary" : {
     "reportName" : "Allure Report",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 1,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "time" : {
-      "minDuration" : 62570,
-      "maxDuration" : 62570,
-      "sumDuration" : 62570,
-      "start" : 1511375559369,
-      "stop" : 1511375621939,
-      "duration" : 62570
+      "minDuration" : 51231,
+      "maxDuration" : 73810,
+      "sumDuration" : 125041,
+      "start" : 1511389277221,
+      "stop" : 1511389405788,
+      "duration" : 128567
     }
   },
   "environment" : [ ],
   "history-trend" : [ {
-    "failed" : 0,
-    "broken" : 0,
+    "failed" : 1,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 1,
+    "passed" : 0,
     "unknown" : 0,
-    "total" : 1
+    "total" : 2
   } ],
   "behaviors" : {
     "total" : 0,
