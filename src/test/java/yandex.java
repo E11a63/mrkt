@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class yandex {
   ChromeDriver wd;
 
-  public static boolean isAlertPresent(FirefoxDriver wd) {
+  public static boolean isAlertPresent(ChromeDriver wd) {
     try {
       wd.switchTo().alert();
       return true;
@@ -24,13 +24,15 @@ public class yandex {
 
   @BeforeMethod
   public void setUp() throws Exception {
-    wd = new ChromeDriver(); //1.1 Открыть браузер
+    wd = new ChromeDriver();
+    wd.manage().window().maximize();
+  //1.1 Открыть браузер
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
   }
 
   @Test
   public void yandexMarket() throws InterruptedException {
-//    wd.manage().window().fullscreen();
+    wd.manage().window().maximize();
     wd.get("https://yandex.ru/"); //2. Зайти на yandex.ru
     wd.findElement(By.xpath("html/body/div[1]/div[3]/div[2]/div[2]/div/div[2]/div/div[1]/div/a[5]")).click(); //3.	Перейти на Яндекс Маркет
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
