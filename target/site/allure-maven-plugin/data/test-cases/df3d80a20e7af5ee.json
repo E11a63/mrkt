@@ -1,0 +1,77 @@
+{
+  "uid" : "df3d80a20e7af5ee",
+  "name" : "ieYandexMarket",
+  "fullName" : "ieYandex.ieYandexMarket",
+  "historyId" : "78ac816d81ba4e0881be666c1215d9cb",
+  "time" : {
+    "start" : 1511412731709,
+    "stop" : 1511412827533,
+    "duration" : 95824
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1511412722478,
+      "stop" : 1511412730712,
+      "duration" : 8234
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1511412827561,
+      "stop" : 1511412828117,
+      "duration" : 556
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ieYandex"
+  }, {
+    "name" : "testClass",
+    "value" : "ieYandex"
+  }, {
+    "name" : "testMethod",
+    "value" : "ieYandexMarket"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite1"
+  }, {
+    "name" : "suite",
+    "value" : "Regression1"
+  }, {
+    "name" : "subSuite",
+    "value" : "ieYandex"
+  }, {
+    "name" : "host",
+    "value" : "DJB"
+  }, {
+    "name" : "thread",
+    "value" : "9016@DJB.main(1)"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

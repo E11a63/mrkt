@@ -1,81 +1,49 @@
 {
   "statistic" : {
-    "failed" : 1,
-    "broken" : 1,
+    "failed" : 0,
+    "broken" : 0,
     "skipped" : 0,
-    "passed" : 0,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 2
+    "total" : 1
   },
   "time" : {
-    "minDuration" : 51231,
-    "maxDuration" : 73810,
-    "sumDuration" : 125041,
-    "start" : 1511389277221,
-    "stop" : 1511389405788,
-    "duration" : 128567
+    "minDuration" : 95824,
+    "maxDuration" : 95824,
+    "sumDuration" : 95824,
+    "start" : 1511412731709,
+    "stop" : 1511412827533,
+    "duration" : 95824
   },
   "children" : [ {
-    "uid" : "39aa701d646b66be",
-    "name" : "chromeYandex",
-    "time" : {
-      "minDuration" : 51231,
-      "maxDuration" : 51231,
-      "sumDuration" : 51231,
-      "start" : 1511389277221,
-      "stop" : 1511389328452,
-      "duration" : 51231
-    },
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "type" : "TestGroupNode",
-    "children" : [ {
-      "uid" : "f37b67b53ce03e77",
-      "name" : "chromeYandexMarket",
-      "time" : {
-        "start" : 1511389277221,
-        "stop" : 1511389328452,
-        "duration" : 51231
-      },
-      "status" : "failed",
-      "flaky" : false,
-      "type" : "TestCaseNode"
-    } ]
-  }, {
-    "uid" : "e83b1bfded50be27",
+    "uid" : "162ab2cbfe585c86",
     "name" : "ieYandex",
     "time" : {
-      "minDuration" : 73810,
-      "maxDuration" : 73810,
-      "sumDuration" : 73810,
-      "start" : 1511389331978,
-      "stop" : 1511389405788,
-      "duration" : 73810
+      "minDuration" : 95824,
+      "maxDuration" : 95824,
+      "sumDuration" : 95824,
+      "start" : 1511412731709,
+      "stop" : 1511412827533,
+      "duration" : 95824
     },
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "type" : "TestGroupNode",
     "children" : [ {
-      "uid" : "d08e104c6ad7a595",
+      "uid" : "df3d80a20e7af5ee",
       "name" : "ieYandexMarket",
       "time" : {
-        "start" : 1511389331978,
-        "stop" : 1511389405788,
-        "duration" : 73810
+        "start" : 1511412731709,
+        "stop" : 1511412827533,
+        "duration" : 95824
       },
-      "status" : "broken",
+      "status" : "passed",
       "flaky" : false,
       "type" : "TestCaseNode"
     } ]

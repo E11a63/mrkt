@@ -1,1 +1,0 @@
-{"uuid":"626ef5ae-8b1b-4936-adc7-863ff3fccccb","name":"chromeYandex.setUp","description":"","start":1511389267757,"stop":1511389276662,"children":["780abea8-9341-41c8-a82e-36ab3371183c"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1511389267760,"stop":1511389276659}]}
